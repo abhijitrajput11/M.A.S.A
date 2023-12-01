@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="icon" href="{% static 'res\LOGO.png' %}" type="image/png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css\index.css' %}">
+    <script src="{% static 'js\index_js.js' %}"></script>
+    <title>M.A.S.A-Mostly Aimless Space Agency</title>
+</head>
+<body id="body_main">
+    <div class="main_hero">
+        <style id="ok1">.main_hero{background-image:url({% static 'css/Entry.png' %});height: 100vh; background-size: cover;}
+        </style>
+          
+          <nav class="navbar navbar-expand-lg bg-trasparent navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/"> <img src="{% static 'res\LOGO.png' %}" alt="" class="rounded-pill" style="width: 95px; height: 95px;"> </a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="demo">
+                    <ul class="navbar-nav">  
+                      <li class="nav-item">
+                            <a href="/" class="nav-link active">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/about-us/" class="nav-link">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/achievements/" class="nav-link">ACHIEVEMENTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/technology/" class="nav-link">TECHNOLOGY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/contact-us/" class="nav-link">CONTACT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/APOD/" class="nav-link">APOD</a>
+                        </li>
+                    </ul>       
+                </div>
+        </div>
+    </nav>
+    <a id="gate_click" href="#" onclick="click_keyhole()">
+        <button style="background-color: transparent; border: 0px; width: 75px;"><img src="{% static 'res\rocket.png' %}" id="keyhole"></button>
+    </a>
+   </div>
+   <script>
+    function redirect_Page () {
+  var tID = setTimeout(function () {
+      window.location.href = "/about-us/";
+      window.clearTimeout(tID);
+  }, 1000);
+}
+function click_keyhole(){ 
+  document.getElementById("gate_click").innerHTML="<img src=\"{% static 'res\\rocket.png' %}\" id=\"keyhole_transition\" style=\"width: 7%; margin-left: 3.3%; margin-top: 1%;\"><style>.main_hero{background-image:url(css/Entry.png);height: 100vh; background-size: cover;}#keyhole_transition{    animation: pullout 1s 0.2s 1;} @keyframes pullout {0%{}50%{margin: -25%;width: 20%;}100%{margin-top: -250%; margin-left: 80%;width: 30%;}}</style>"
+  document.getElementById("ok1").innerHTML=".main_hero{background:black;height: 100vh; background-size: cover;}"
+  setInterval(() => {
+  }, 1000);
+  redirect_Page()  
+}
+   </script>
+    <!-- <img id="gate" src="res\Entry.png" alt=""> -->
+    <!-- M.A.S.A. - Making Aliens Swoon Awkwardly
+    MASA - Maniacs And Superheroes of Astronomy!
+    MASA - Making Aliens Slightly Anxious
+    Mysteriously Awesome Space Adventures
+    MASA - Marvelous Astronomical Space Agency
+    Mostly Aimless Space Agency
+    M - Madcap
+    A - Astronomical
+    S - Shenanigans
+    A - Association -->
+</body>
+</html>

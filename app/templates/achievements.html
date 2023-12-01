@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="icon" href="{% static 'res\LOGO.png' %}" type="image/png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css\achievements.css' %}">
+    <script src="{% static 'js\achievements.js' %}"></script>
+    <title>Achievements</title>
+</head>
+<body>
+    <div id="layers">
+        
+      <nav class="navbar navbar-expand-lg bg-trasparent navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"> <img src="{% static 'res\LOGO.png' %}" alt="" class="rounded-pill" style="width: 95px; height: 95px;"> </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="demo">
+                <ul class="navbar-nav">  
+                  <li class="nav-item">
+                        <a href="/" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about-us/" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/achievements/" class="nav-link active">ACHIEVEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/technology/" class="nav-link">TECHNOLOGY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact-us/" class="nav-link">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/APOD/" class="nav-link">APOD</a>
+                    </li>
+                </ul>       
+            </div>
+    </div>
+  </nav>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div><br><br><br><br><br><br><br>
+
+      <div id="c1" class="container bg-trasparent">
+        <center>
+    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#demo2" data-bs-slide-to="1"></button>
+            <button data-bs-target="#demo2" data-bs-slide-to="2"></button>
+            <button data-bs-target="#demo2" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active"><a href="#tree">
+                <img src="{% static 'res/Tree Of Life.png' %}" style="height: 40%; width: 50%;opacity: 0.7;" alt="" class="rounded d_block"></a>
+                <br><br><br><br><br>
+                <div class="carousel-caption">
+                    <h4>Tree Of Life</h4>
+                </div>
+            </div>
+            <div class="carousel-item"><a href="#planet_x">
+                <img src="{% static 'res/Planetx_1.png' %}" style="height: 40%; width: 58.5%;opacity: 0.7;" alt="" class="rounded d_block"></a>
+                <br><br><br><br><br>
+                <div class="carousel-caption">
+                    <h4>Planet-X</h4>
+                </div>
+            </div>
+            <div class="carousel-item"><a href="#mirror">
+                <img src="{% static 'res/Mirror Planet.png' %}" style="height: 70%; width: 50%;opacity: 0.6;" alt="" class="rounded d_block"></a>
+                <br><br><br><br><br>
+                <div class="carousel-caption">
+                    <h4>Mirror Planet</h4>
+                </div>
+            </div>
+            <div class="carousel-item"><a href="#tesaract">
+                <img src="{% static 'res/Tesaract_universe.png' %}" style="height: 40%; width: 58.5%; opacity: 0.7;" alt="" class="rounded d_block"></a>
+                <br><br><br><br><br>
+                <div class="carousel-caption">
+                    <h4>Tesaract Universe</h4>
+                </div>
+            </div>
+        </div>
+    </div></center>
+    <div class="carousel-control-prev" data-bs-target="#demo2" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </div>
+    <div class="carousel-control-next" data-bs-target="#demo2" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </div>
+    </div>
+    <br id="tree">
+<!-- Tree Of Life -->
+    <div class="container-fluid" style="margin-top: 8%;">
+        <div class="row">
+            <div class="col-xl" style="margin-left: 50px;">
+                <img src="{% static 'res/Tree Of Life.png' %}" class="rounded-circle" style="width: 75%;" alt="">
+            </div>
+        <div class="col-xl mt-5 text-center" style="margin-right: 4%; margin-left: -7%;">
+            <h3 class="text-light">The Tree Of Life</h3> 
+            <p class="text-light mt-3">The Tree of Life is surrounded by a circle of smaller trees, each representing a different aspect of life, such as love, wisdom, strength, and courage. The branches of the tree are covered in leaves of all shapes and sizes, and the trunk is rough and gnarled, with deep grooves and knots.The Tree of Life is also said to be home to a variety of mystical creatures, including fairies, unicorns, and dragons, who protect and guard the tree's secrets.</p>
+            
+        <div class="button" id="button-5">
+            <div id="translate"></div>
+            <a href="#" id="a_learn" data-bs-toggle="modal" data-bs-target="#ex">Learn More</a>
+        </div>
+            <div class="modal modal-lg" id="ex">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="mod_main" style="height: 420px; margin-top: 10%;animation: fadeInAnimation ease 0.5s;">
+                        <div class="modal-header">
+                            <h4 class="modal-title text-light" style="border: none;">Planet-X</h4>
+                        </div>
+                        <div class="modal-body">
+                            Those who believe in the existence of Planet-X claim that it has had a significant impact on the history of Earth, including causing mass extinctions and cataclysmic events. Some even suggest that it is home to an advanced alien civilization that has been observing and interacting with Earth for thousands of years.
+
+                            Despite the lack of concrete evidence for its existence, the idea of Planet-X continues to capture the imagination of many people, inspiring countless works of science fiction and fantasy. It remains a symbol of the unknown and the mysterious, a reminder that there is still much we have yet to discover and understand about the vast expanse of the universe. Planet-X, also known as Nibiru, is a hypothetical planet that is said to exist beyond the orbit of Neptune, in the outer reaches of our solar system. According to some theories, Planet-X is a large, dark planet that follows a highly elliptical orbit around the sun, taking thousands of years to complete a single orbit.                       
+                        </div>                        
+                        <div class="modal-footer" style="border: none;">
+                                    <a href="#" id="a_close" data-bs-toggle="modal"><span>Close</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br id="planet_x">
+<!-- Planet-X -->
+    <div class="container-fluid" style="margin-top: 8%;">
+        <div class="row">
+        <div class="col-xl mt-5 text-center" style="margin-left: 2%;margin-right: 5%;">
+            <h3 class="text-light">Planet-X</h3> 
+            <p class="text-light mt-3">Located in the Andromeda galaxy, Planet X is a gas giant with a highly active atmosphere
+                that produces stunning auroras. It is also home to a diverse range of microorganisms that
+                have never been seen before.Planet-X is a large, dark planet that follows a highly elliptical orbit around the sun, taking thousands of years to complete a single orbit.</p>
+        <div class="button" id="button-5">
+            <div id="translate"></div>
+            <a href="#" id="a_learn" data-bs-toggle="modal" data-bs-target="#ex">Learn More</a>
+        </div>
+            <div class="modal modal-lg" id="ex">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="mod_main" style="height: 420px; margin-top: 10%;animation: fadeInAnimation ease 0.5s;">
+                        <div class="modal-header">
+                            <h4 class="modal-title text-light" style="border: none;">The Tree Of Life</h4>
+                        </div>    
+                        <div class="modal-body">Those who believe in the existence of Planet-X claim that it has had a significant impact on the history of Earth, including causing mass extinctions and cataclysmic events. Some even suggest that it is home to an advanced alien civilization that has been observing and interacting with Earth for thousands of years.
+                            Despite the lack of concrete evidence for its existence, the idea of Planet-X continues to capture the imagination of many people, inspiring countless works of science fiction and fantasy. It remains a symbol of the unknown and the mysterious, a reminder that there is still much we have yet to discover and understand about the vast expanse of the universe.                        
+                        </div>                        
+                        <div class="modal-footer" style="border: none;">
+                                    <a href="#" id="a_close" data-bs-toggle="modal"><span>Close</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl" style="margin-right: -9%;">
+            <img src="{% static 'res/Planetx_1.png' %}" class="rounded-circle" style="width: 75%;" alt="">
+        </div>
+    </div>
+    <br><br><br id="tesaract">
+<!-- The Tesseract Universe -->
+<div class="container-fluid" id="tesaract" style="margin-top: 8%;">
+    <div class="row">
+        <div class="col-xl" style="margin-left: 10px;">
+            <img src="{% static 'res/Tesaract_universe.png' %}" class="rounded-circle" style="width: 80%; height: 100%;" alt="">
+        </div>
+    <div class="col-xl mt-5 text-center" style="margin-right: 4%; margin-left: -7%;">
+        <h3 class="text-light">The Tesseract Universe</h3> 
+        <p class="text-light mt-3">This is a mysterious universe that exists beyond the four-dimensional spacetime that we
+            know. It is a place of pure energy and contains many strange and exotic phenomena that we
+            are only beginning to understand.The universe is also filled with a vast array of technology, from advanced starships that can travel faster than the speed of light, to powerful weapons that can level entire planets.</p>
+        
+    <div class="button" id="button-5">
+        <div id="translate"></div>
+        <a href="#" id="a_learn" data-bs-toggle="modal" data-bs-target="#ex2">Learn More</a>
+    </div>
+        <div class="modal modal-lg" id="ex2">
+            <div class="modal-dialog">
+                <div class="modal-content" id="mod_main" style="height: 420px; margin-top: 10%;animation: fadeInAnimation ease 0.5s;">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-light" style="border: none;">The Tesseract Universe</h4>
+                    </div>
+                    <div class="modal-body">
+                        At the center of The Tesseract Universe is a powerful object known as the Tesseract, a crystalline structure that contains the very essence of creation itself. It is said that the Tesseract was formed at the beginning of time, and that it holds the key to unlocking the secrets of the universe.
+Throughout The Tesseract Universe, there are countless species of beings, each with their own unique abilities and powers. Some are peaceful and benevolent, while others are dark and malevolent, seeking to use the power of the Tesseract for their own nefarious purposes.
+The Tesseract Universe is home to a wide variety of planets, each with its own unique environment and ecosystem. There are lush, forested worlds teeming with life, barren and desolate wastelands, and even entire planets made entirely of crystal or metal.Throughout the Tesseract Universe, there are countless adventures waiting to be had, and mysteries waiting to be uncovered.</div>                        
+                    <div class="modal-footer" style="border: none;">
+                                <a href="#" id="a_close" data-bs-toggle="modal"><span>Close</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br id="mirror">
+<!-- The Mirror Planet -->
+<div class="container-fluid" id="mirror" style="margin-top: 8%;">
+    <div class="row">
+    <div class="col-xl mt-5 text-center" style="margin-left: 2%;margin-right: 5%;">
+        <h3 class="text-light">The Mirror Planet</h3> 
+        <p class="text-light mt-3">Located in a distant star system, the Mirror Planet is a unique world that reflects all light that
+            falls on its surface. This creates a dazzling effect that has never been seen before in the
+            universe.The most distinctive feature of the Mirror Planet is that everything is reversed or mirrored. This means that the planet's inhabitants have a different sense of orientation, with left and right being switched, and everything appearing in reverse.</p>
+    <div class="button" id="button-5">
+        <div id="translate"></div>
+        <a href="#" id="a_learn" data-bs-toggle="modal" data-bs-target="#ex3">Learn More</a>
+    </div>
+        <div class="modal modal-lg" id="ex3">
+            <div class="modal-dialog">
+                <div class="modal-content" id="mod_main" style="height: 420px; margin-top: 10%;animation: fadeInAnimation ease 0.5s;">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-light" style="border: none;">The Mirror Planet</h4>
+                    </div>    
+                    <div class="modal-body">The Mirror Planet is inhabited by a wide variety of creatures, many of which have evolved to survive in this strange environment. There are animals with reversed internal organs, plants that grow upside-down, and insects that fly backwards. Some creatures are completely unique, with features and abilities that are unlike anything found on our own planet.
+
+                        Despite its many oddities, the Mirror Planet is also home to many familiar landmarks and features, such as mountains, oceans, and cities. However, these are all reversed, leading to a disorienting and surreal experience for those who visit.
+                        
+                        The Mirror Planet is also said to be a place of great magic and mystery, with powerful wizards and sorcerers practicing their craft in secret enclaves.
+                        
+                        Overall, the Mirror Planet is a fascinating and enigmatic place, with endless possibilities for exploration and discovery. It is a world unlike any other, where the laws of physics and the boundaries of reality are constantly being pushed and challenged.
+                        
+                        </div>                        
+                    <div class="modal-footer" style="border: none;">
+                                <a href="#" id="a_close" data-bs-toggle="modal"><span>Close</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl" style="margin-right: -9%;">
+        <img src="{% static 'res/Mirror Planet.png' %}" class="rounded-circle" style="width: 75%;" alt="">
+    </div>
+</div>
+<br><br><br>
+
+<input type="button"id="myBtn" onclick="topFunction()" value=&#8593; />
+<style>#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.112); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+</style>
+<script>// Get the button:
+  let mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }</script>
+<footer>
+    <ul>
+      <li>M.A.S.A Mostly Aimless Space Agency &copy; 2023</li>
+    </ul>
+  </footer>
+</body>
+</html>

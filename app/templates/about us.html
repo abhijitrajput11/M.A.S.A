@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="icon" href="{% static 'res\LOGO.png' %}" type="image/png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css\about us.css' %}">
+    <script src="{% static 'js\about us.js' %}"></script>
+    <title>About MASA</title>
+</head>
+<body style="overflow-x: hidden;">
+    <div id="layers">
+        
+      <nav class="navbar navbar-expand-lg bg-trasparent navbar-dark fixed-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="/"> <img src="{% static 'res\LOGO.png' %}" alt="" class="rounded-pill" style="width: 95px; height: 95px;"> </a>
+              <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="demo">
+                  <ul class="navbar-nav">  
+                    <li class="nav-item">
+                          <a href="/" class="nav-link">HOME</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/about-us/" class="nav-link active">ABOUT US</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/achievements/" class="nav-link">ACHIEVEMENTS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/technology/" class="nav-link">TECHNOLOGY</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/contact-us/" class="nav-link">CONTACT US</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="/APOD/" class="nav-link">APOD</a>
+                      </li>
+                  </ul>       
+              </div>
+      </div>
+  </nav>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div><br><br><br>
+      <br><br><br>
+      <div id="about_us" class="container">
+        <img src="{% static 'res/LOGO.png' %}" style="width: 40%; height: 40%; float: right; margin-left: 20%;" alt="">
+        <center>
+            <br>
+            <br><br><br>
+            <h3 class="text-light">Exploring the Universe</h3> <br>
+            <p class="text-light">Welcome to MASA, the leading space exploration organization dedicated to discovering the unknown and exploring the vast universe. Our mission is to uncover the mysteries of space and share our discoveries with the world. We believe that there is still so much to learn about the universe, and we are committed to pushing the boundaries of science and technology to achieve our goals.</p>
+            <br>
+            <button class="btn_explore"  data-bs-toggle="modal" data-bs-target="#ex2">Explore More</button>
+            <div class="modal modal-xl" id="ex2">
+                <div class="modal-dialog">
+                    <div class="modal-content" id="mod_main" style="height: 370px; margin-top: 10%;animation: fadeInAnimation ease 1.5s;">
+                        <div class="modal-header" style="border: none;">
+                            <h4 class="modal-title text-light">About Us</h4>
+                        </div>
+                        <div class="modal-body fs-5" id="mod_body">
+                            <!-- <img src="res\rocket.png" id="keyhole_transition" style="width: 7%; margin-left: -34px; margin-top: 5px;"><style>#keyhole_transition{animation: pullout 1s 0.2s 1;} @keyframes pullout {0%{}50%{margin: -25%;width: 20%;}100%{margin-top: -250%; margin-left: 80%;width: 30%;}}</style> -->
+                            At MASA, we have a team of experts in various fields, including astronomy, physics, engineering, and more. Our team is passionate about space exploration and dedicated to advancing our knowledge of the universe. With state-of-the-art technology and innovative research methods, we are able to uncover new information about the cosmos and make groundbreaking discoveries.If you share our passion for space exploration and want to be a part of our mission, we invite you to join us. Whether you are a student, a scientist, or a space enthusiast, there are many ways to get involved with MASA. Click the "Learn More" button to learn more about our achievements.</div>
+                        <div class="modal-footer" style="border: none;">
+                            <button class="btn btn-transparent" data-bs-toggle="modal" style="color: rgba(255, 255, 255, 0.705);">Close</button>
+                            <a href="/achievements/"><button class="btn btn-transparent" style="color: rgba(255, 255, 255, 0.705);">Learn More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+        <br><br>
+      <div class="scroll-arrow">
+        <svg width="30px" height="20px">
+          <path
+            stroke="#ffffff"
+            fill="none"
+            stroke-width="2px"
+            d="M2.000,5.000 L15.000,18.000 L28.000,5.000 "
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <br><br><br>
+    <section class="section-a">
+        <div class="section-inner">
+          <h4>Meet The Founders</h4>
+          <h2>The Three Musketeers</h2>
+        </div>
+      </section>
+      <input type="button"id="myBtn" onclick="topFunction()" value=&#8593; />
+      <style>#myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: rgba(0, 0, 0, 0.112); /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      </style>
+      <script>// Get the button:
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
+    <footer>
+        <ul>
+          <li>M.A.S.A Mostly Aimless Space Agency &copy; 2023</li>
+        </ul>
+      </footer>
+</body>
+</html>

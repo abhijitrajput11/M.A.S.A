@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="icon" href="{% static 'res\LOGO.png' %}" type="image/png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css\achievements.css' %}">
+    <title>APOD</title>
+    <style>
+          body {
+    background-color: #000; /* Black background */
+    color: #FFF; /* White text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  input[type="date"], input[type="submit"] {
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-color: white;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+input[type="submit"] {
+  background-color: black;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+  h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  form {
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  /* Style the APOD image */
+  #apodimg {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7); /* Add a subtle glow effect */
+  }
+    </style>
+</head>
+<body>
+    <div id="layers">
+        <nav class="navbar navbar-expand-lg bg-trasparent navbar-dark fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/"> <img src="{% static 'res\LOGO.png' %}" alt="" class="rounded-pill" style="width: 95px; height: 95px;"> </a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="demo">
+                <ul class="navbar-nav">  
+                  <li class="nav-item">
+                        <a href="/" class="nav-link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/about-us/" class="nav-link">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/achievements/" class="nav-link">ACHIEVEMENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/technology/" class="nav-link">TECHNOLOGY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/contact-us/" class="nav-link">CONTACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/APOD/" class="nav-link active">APOD</a>
+                    </li>
+                </ul>       
+            </div>
+    </div>
+    </nav>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+        <div class="layer"></div>
+      </div><br><br><br><br><br><br>
+<h1>Astronomy Picture of the Day</h1>
+<p>{{imginfo.date}}</p>
+<img src="{{imginfo.hdurl}}" height="300px" alt="APOD Image" id="apodimg"> <br>
+<p style="padding-right: 10%;padding-left: 10%;padding-top: 2%;padding-bottom: 2%;"><b>Explanation:</b> {{imginfo.explanation}}</p>
+<form method="post">
+    {% csrf_token %}
+    <input type="date" name="date" value="{{imginfo.date}}"/><br><br>
+    <button type="submit">Get</button>
+</form>
+<br><br><br>
+
+<input type="button" id="myBtn" onclick="topFunction()" value=&#8593; />
+<style>#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(0, 0, 0, 0.112); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+</style>
+<script>// Get the button:
+    let mybutton = document.getElementById("myBtn");
+    
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }</script>
+  <footer>
+      <ul>
+        <li>M.A.S.A Mostly Aimless Space Agency &copy; 2023</li>
+      </ul>
+    </footer>
+</body>
+</html>

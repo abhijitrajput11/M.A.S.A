@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {% load static %}
+    <link rel="icon" href="{% static 'res\LOGO.png' %}" type="image/png"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'css\join us.css' %}">
+    <!-- <script src="js/join us.js"></script> -->
+    <title>Contact Us</title>
+</head>
+<body>
+    <div id="layers">
+        
+      <nav class="navbar navbar-expand-lg bg-trasparent navbar-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"> <img src="{% static 'res\LOGO.png' %}" alt="" class="rounded-pill" style="width: 95px; height: 95px;"> </a>
+          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="demo">
+              <ul class="navbar-nav">  
+                <li class="nav-item">
+                      <a href="/" class="nav-link">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/about-us/" class="nav-link">ABOUT US</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/achievements/" class="nav-link">ACHIEVEMENTS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/technology/" class="nav-link">TECHNOLOGY</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/contact-us/" class="nav-link active">CONTACT US</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/APOD/" class="nav-link">APOD</a>
+                  </li>
+              </ul>       
+          </div>
+  </div>
+  </nav>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+      <div class="layer"></div>
+    </div><br><br><br><br><br><br>
+    <div class="contain">
+
+        <div class="wrapper">
+          <div class="form">
+            <h4>GET IN TOUCH</h4>
+            <h2 class="form-headline">Send us a message</h2>
+            <form id="submit-form" action="">
+              <p>
+                <input id="name" class="form-input" type="text" placeholder="Your Name*">
+              </p>
+              <p>
+                <input id="email" class="form-input" type="email" placeholder="Your Email*">
+              </p>
+              <p class="full-width">
+                <input id="company-name" class="form-input" type="text" placeholder="Company Name*" required>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <textarea  minlength="20" id="message" cols="30" rows="7" placeholder="Your Message*" required></textarea>
+                <small></small>
+              </p>
+              <p class="full-width">
+                <input type="checkbox" id="checkbox" name="checkbox" checked> Yes, I would like to receive communications by call / email about Company's services.
+              </p>
+              <p class="full-width">
+                <input type="submit" class="submit-btn" onclick="validate()" value="Submit">
+                <script>
+                  function validate(){
+                      var case_email= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                      let mail=document.getElementById("email").value
+                      if (case_email.test(mail)==false){
+                        alert("Enter Valid Email")
+                      }
+                  }
+                </script>
+              </p>
+            </form>
+          </div>
+      
+          <div class="contacts contact-wrapper">
+      
+            <ul>
+              <li>M.A.S.A was founded under the belief that a future where humanity is out exploring the stars is fundamentally more exciting than one where we are not.</li>
+              <span class="hightlight-contact-info">
+                <li class="email-info"><i class="fa fa-envelope" aria-hidden="true"></i> support@masa.com</li>
+                <li><i class="fa fa-phone" aria-hidden="true"></i> <span class="highlight-text">+91 69 6699 0420</span></li>
+              </span>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <input type="button"id="myBtn" onclick="topFunction()" value=&#8593; />
+      <style>#myBtn {
+        display: none; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color: rgba(0, 0, 0, 0.112); /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      </style>
+      <script>// Get the button:
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }</script>
+      <footer>
+          <ul>
+            <li>M.A.S.A Mostly Aimless Space Agency &copy; 2023</li>
+          </ul>
+        </footer>
+</body>
+</html>
